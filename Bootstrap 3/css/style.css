@@ -1,0 +1,184 @@
+ @font-face {
+    font-family: Somatic; 
+    src: url(fonts/Somatic-Rounded.ttf); 
+   }
+
+.identification
+{
+    vertical-align: bottom;
+    text-align: right;
+    margin-top:57%;
+}
+.identification a
+{
+    margin-top:0%;
+}
+
+.identification a:hover
+{   
+ 
+     text-decoration: none;
+}
+
+hr
+{
+   border-top-color:#A9A9A9;
+}
+.nav li
+{
+    color: yellow;
+}
+#login
+{
+    cursor: pointer;
+   color: black;
+}
+#registration
+{
+    cursor: pointer;
+     color: black;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+.body {
+    flex: 1 0 auto;
+}
+.footer-bottom
+{
+    background-color: black;
+    height: %;
+    width: 100%;
+    flex: 0 0 auto;
+    color: yellow;
+}
+.copyright {
+    /*color: #fff;*/
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    /*color: #fff;*/
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a:hover{
+    text-decoration: none;
+    /*color: #fff;*/
+}
+#responsive-menu
+{
+    float:left;
+}
+.search
+{
+   text-align: right;
+   padding-top: 11px;
+}
+
+.search input#search
+{
+    width: 35%;
+    height: 27px;
+    padding-left: 1%;
+    border-radius: 100px;
+    border: none;
+}
+.search input#btn_find
+{
+    border-radius: 100px;
+    border: none;
+    height: 27px;
+}
+.navbar-header
+{
+    float:left;
+}
+#find_logo
+{
+    float: right;
+    font-size: 80%;
+    color: white;
+    height: 50%;
+}
+#responsive-menu ul li 
+{
+    margin-left: 10px;
+}
+.items
+{
+    
+    text-align: center;
+}
+.product_items_smartphone img
+{
+    width: 17%;
+}
+.product_items_smartphone
+{
+    float: left;
+}
+.product_items_laptop img
+{   
+    width: 50%;
+}
+.product_items_laptop
+{
+    float: left;
+}
+.product_items_tv img
+{ 
+    width: 50%;
+}
+.product_items_tv
+{
+    float: left;
+}
+.items a
+{
+    text-decoration: none;
+    color: black;
+}
+.items a:hover
+{
+    text-decoration: none;
+}
+@media (min-width: 768px)  {.btn-right-lg
+{
+    margin-left: 65%;
+}
+}
+@media (min-width: 637px)  {.btn-right-md
+{
+    margin-left: 90%;
+}
+}
+@media (min-width: 606px)  {.btn-right-sm
+{
+    margin-left: 85%;
+}
+}
+
+
+@media (min-width: 676px, max-width: 766px)  {.btn-right-sdm
+{
+    margin-left: 100%;
+}
+}
+
+@media (min-width: 768px)  {.btn-right-lgR
+{
+    margin-left: 73%;
+}
+}
+

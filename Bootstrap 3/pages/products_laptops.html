@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <head>
+ <link rel="shortcut icon" href="../icon/profits.png" type="image/png">
+</head>
+      <title>  Cheaper</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style_products.css" rel="stylesheet">
+   <link href="../css/style_products.css" rel="stylesheet">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    </head>
+  <body>
+ <div class="wrapper">
+     <header class="header">  
+            <div class="container">
+            <div class="row ">  
+                <div  class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <h1><a href="../index.html"  ><img src="../Images/Logo.png" width="192px" height="97"></a></h1>
+                </div>
+                <div  class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                <div class="identification hidden-xs " >
+                    <div  class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <a data-toggle="modal" data-target="#myModalLogin"  id="login">
+                            Вхід  </a>
+                    </div>
+                    <div  class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <a data-toggle="modal" data-target="#myModalRegistration"  id="registration">&nbsp;Реєстрація</a>
+                    </div>
+                </div>   
+                </div>
+                </div>
+                </div>
+            <div class="navbar navbar-inverse"> 
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#find" id="find_logo" >
+                        <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                            <span class="sr-only">Open menu</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        
+                        <!--<a class="navbar-brand" href="#">Name</a>-->
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive-menu">
+                        <ul class="nav navbar-nav" >
+                            <li class="hidden-sm hidden-md hidden-lg"><a data-toggle="modal" data-target="#myModalLogin"  >
+                            Вхід  </a></li>
+                            <li class="hidden-sm hidden-md hidden-lg"> <a data-toggle="modal" data-target="#myModalRegistration"  >Реєстрація</a></li>
+                            <li> <a href="products_smartphones.html">Смартфони</a></li>
+                            <li> <a href=# id="active">Ноутбуки</a></li>
+                            <li> <a href="products_tv.html">Телевізори</a></li>
+                        </ul>                     
+                    </div> 
+                    <div class="search collapse navbar-collapse" id="find">                   
+                    <form>
+                               <input type="search" name="q" id="search" placeholder="Пошук"> 
+                               <input type="submit" id="btn_find"value="Найти">
+                        
+                    </form>
+                    </div>
+                </div>
+        </div>
+      </header>
+
+
+      <div class="body">
+        <div class="container">      
+             <div class="row">
+                 <div  class="filter  col-sm-2 col-md-2 col-lg-2 collapse " id="responsive-filter"> 
+                  
+                  <p>Виробник:</p>
+                     <label>
+                    <input type="checkbox" name="acer">Acer
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="apple">Apple
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="asus">Asus
+                </label><br/>              
+             <label>
+                    <input type="checkbox" name="dell">Dell
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="hp">HP
+                </label><br/>
+              <label>
+                    <input type="checkbox" name="lenovo">Lenovo
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="msi">MSI
+                </label><br/>           
+             <hr/>
+             <p>Ціна:
+            <input type="text" size="2" placeholder="від..." required name="inputText">-<input type="text" size="2" placeholder="до..." required name="inputText"></p>
+             <hr/>
+             <p>Діагональ:</p>
+                <label>
+                    <input type="checkbox" name="d10">10,1"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d11">11.6"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d12">12,5"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d13">13,3"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d14">14"
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="d15">15,6"
+                </label><br/>
+                     <label>
+                    <input type="checkbox" name="d17">17,3"
+                </label><br/>
+             <hr/>
+                     <p>Процесор</p>
+                <label>
+                    <input type="checkbox" name="i7">Intel Core i7
+                </label><br/>
+                                  <label>
+                    <input type="checkbox" name="i5">Intel Core i5
+                </label><br/>
+                                     <label>
+                    <input type="checkbox" name="i3">Intel Core i3
+                </label><br/>
+                                     <label>
+                    <input type="checkbox" name="celeron">Intel Celeron
+                </label><br/>
+                        <label>
+                    <input type="checkbox" name="pentium">Intel Pentium
+                </label><br/>
+                        <label>
+                    <input type="checkbox" name="a10">AMD A10
+                </label><br/>
+                      <label>
+                    <input type="checkbox" name="a6">AMD A6
+                </label><br/>
+                     
+             <hr/> 
+                      <p>Відеокарта</p>
+                <label>
+                    <input type="checkbox" name="integr">Інтегрована
+                </label><br/>
+                                  <label>
+                    <input type="checkbox" name="nvidia">nVidia GeForce
+                </label><br/>
+                                     <label>
+                    <input type="checkbox" name="amd">AMD Radeon
+                </label><br/>
+             <hr/> 
+                     
+             <p>Операційна система:</p>
+                <label>
+                    <input type="checkbox" name="macos">Mac OS
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="windows">Windows
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="linux">Linux
+                </label><br/>
+                     <label>
+                    <input type="checkbox" name="free">Без ОС
+                </label><br/>    
+             <hr/>
+             <p>Оперативна пам’ять:</p>
+                <label>
+                    <input type="checkbox" name="ram2">2GB
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="ram4">4GB
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="ram8">8GB
+                     </label><br/>
+            <label>
+                <input type="checkbox" name="ram16">16GB
+                </label><br/>
+             <label>             
+                    <input type="checkbox" name="ram32">Більше 16
+                </label><br/>
+             <hr/>
+             <p>Розширення дисплею:</p>
+                <label>
+                    <input type="checkbox" name="4k">4K
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="wqhd">WQHD (2560x1440)
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="fullhd">FullHD (1920x1080)
+                </label><br/>
+                     <label>
+                    <input type="checkbox" name="qhd">1440x900
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="hd">HD (1280x720)
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="qhd">1440x900
+                </label><br/>
+                     
+            </div>
+
+                 <div  class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+            <div class="items_smartf">
+                <div class="row sort" >                 
+                    <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                        <b>Сортування:</b>
+                         <select name="select" id="sort">
+                            <option name="opt1">Зростанням ціни</option>
+                            <option name="opt2">Спаданням ціни</option>
+                            <option name="opt3" selected>Популярністю</option>
+                        </select>
+                    </div>             
+                </div>
+                <a href="#responsive-filter" data-toggle="collapse" class="btn btn-filter btn-primary hidden-sm hidden-md hidden-lg "  >
+                    <i  class="fa fa-filter" aria-hidden="true"></i>
+                </a>
+                <hr/>
+                <div class="row" name="laptop">                 
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-3 ">
+                    <a href="products/laptops/Lenovo/v310-15/lenovo310.html"><img src="../pages/products/laptops/Lenovo/v310-15/img/1v310-15.jpg" id="prd-photo">     </a>              
+                </div>
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-9 ">
+                    <a href="products/laptops/Lenovo/v310-15/lenovo310.html"><h3 >Lenovo IdeaPad V310-15</h3></a>
+                      <hr>
+                    <h3  id="tlt">Ціна: </h3><h3 id="price" name="price">12 750 </h3>
+                     <hr>
+                    <p>
+                    Ноутбук / 15,6" / TN + film / 1920x1080 / Intel Core i5-6200U / 2,3-2,8 ГГц / ОЗП: 4 ГБ / Intel HD Graphics 520 ? HDD: 1000 ГБ / 2,1 кг / ОС: DOS / Без ОС / колір: Чорний 
+                    </p>
+                </div>              
+                </div>
+                
+                <p></p>
+                <hr>
+                <p></p>
+                <div class="row" name="laptop">        
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="products/laptops/Asus/X556UQ/asusx556.html">
+                    <img src="../pages/products/laptops/Asus/X556UQ/img/1x556uq.jpg" id="prd-photo">    
+                    </a>
+                </div>
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
+                    <a href="products/laptops/Asus/X556UQ/asusx556.html"><h3 >ASUS X556UQ </h3></a>
+                      <hr>
+                    <h3 style="float:left" id="tlt">Ціна: </h3><h3 id="price" name="price">13 690 - 20 672</h3>
+                     <hr>
+                    <p>
+                    Ноутбук / 15,6" / 1920x1080 / Intel Core i5-7200U / 2,5 ГГц / ОЗП: 4 ГБ / Intel HD Graphics 620 / HDD: 1000 ГБ / 2,3 кг / ОС: DOS / Без ОС
+                    </p>
+                </div>              
+            </div>
+                <hr>
+                <p></p>
+                <div class="row" name="laptop">        
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="products/laptops/Apple/Air/macbookair.html">
+                    <img src="../pages/products/laptops/Apple/Air/img/1Air.jpg" id="prd-photo">    
+                    </a>
+                </div>
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
+                    <a href="products/laptops/Apple/Air/macbookair.html"><h3 >Apple MacBook Air 13"</h3></a>
+                      <hr>
+                    <h3 style="float:left" id="tlt">Ціна: </h3><h3 id="price" name="price">21 909 - 35 587</h3>
+                     <hr>
+                    <p>
+                    Ноутбук / 13,3" / TN + film / 1400x900 / Intel Core i5-5250U / 1,6-2,7 ГГц / ОЗП: 8 ГБ / Intel HD Graphics 6000 / SSD: 128 ГБ / 1,35 кг / ОС: OS X El Capitan
+                    </p>
+                </div>              
+            </div>
+                <hr>
+        </div>
+        <p></p>
+            </div>
+            </div>
+      </div>
+     </div>
+                
+      <footer class="footer-bottom">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="copyright" >
+
+					 © 2017, Cheaper, Всі права захищено
+
+				</div>
+
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="design">
+
+				 |  <a target="_blank" href="http://www.Cheaper.com">Web Design & Development by Andrii Nabyvanets</a>
+
+				</div>
+
+			</div>
+
+		</div>
+    </div>
+	</footer>
+    
+      </div>
+    
+    <div id="myModalLogin" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+    <h3 class="modal-title">Вхід</h3>
+</div>
+    <div class="modal-body">
+   <form action="#" class="form">
+       <div class="form-group">
+       <input type="login" class="form-control" placeholder="Логін" value="">
+       </div>
+        <div class="form-group">
+       <input type="password" class="form-control" placeholder="Пароль" value="">
+       </div>
+       <button type="submit" class="btn btn-primary  btn-right-sdm btn-right-sm btn-right-md btn-right-lg" >
+           <i class="fa fa-sign-in"></i> Увійти
+       </button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+      
+      <div id="myModalRegistration" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+    <h3 class="modal-title">Реєстрація</h3>
+</div>
+    <div class="modal-body">
+   <form action="#" class="form">
+       <div class="form-group">
+       <input type="text" class="form-control" placeholder="Ім'я" value="">
+       </div>
+         <div class="form-group">
+       <input type="text" class="form-control" placeholder="Прізвище" value="">
+       </div>
+       <div class="form-group">
+       <input type="email" class="form-control" placeholder="Email" value="">
+       </div>
+        <div class="form-group">     
+       <input type="login" class="form-control" placeholder="Логін" value="">
+       </div>
+        <div class="form-group">
+       <input type="password" class="form-control" placeholder="Пароль" value="">
+       </div>
+       <button type="submit" class="btn btn-primary  btn-right-sdmR btn-right-smR btn-right-md-r btn-right-lgR" >
+           <i class="fa fa-sign-in"></i> Зареєструватися
+       </button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>

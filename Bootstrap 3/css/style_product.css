@@ -1,0 +1,198 @@
+.top
+{
+    margin-bottom: 0px;
+}
+.body
+{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+#desc.row
+{
+    margin-top: -30px;
+    padding: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#short_desc img
+{
+    width: 100%;
+}
+.items_smartf hr
+{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+hr
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.prop
+{
+    margin: 0;
+}
+.main_desc
+{
+    margin-left: 25px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button 
+{
+    font-weight: bold;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;  
+}
+div.tab button:hover 
+{
+    background-color: #ddd;
+}
+div.tab button.active {
+    text-decoration-style: solid;
+  /*  text-decoration: overline;*/
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent 
+{
+background-color: #F8F8FF;
+  align-content: center;
+    display: none;
+    padding: 4px 15px;
+    border-top: none;
+}
+#Offer
+{
+    display: block;   
+}
+.tabcontent h3
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.titleText
+{
+    margin-bottom: 3px;
+    margin-top: 8px;
+}
+textarea
+{
+resize:none;   
+}
+.sendButton
+{
+    position:absolute;
+	bottom:3%;
+    right:7%;
+}
+.sendButton input
+{
+
+    border-radius: 100px;
+    border: 1px solid black;
+    height: 27px;
+    color: black;
+/*    background-color: yellow;*/
+}
+#spec
+{   
+    width: 80%;
+    margin: 2%;
+}
+#spec td
+{
+    height: 30px;
+    width: 50%;
+}
+#spec table, th, td
+{
+   border-bottom: 1px dashed #A9A9A9;
+    font-weight: normal;
+    font-size: 110%;  
+}
+#spec th
+{
+    width: 58%;
+}
+.table-title
+{
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #A9A9A9;
+    font-weight: bold;
+    font-size: 135%;
+    padding-top: 1%;
+}
+.shop-item
+{
+    padding-top: 1%;
+}
+.shop-title h4
+{
+    float: left;
+}
+.shop-item  h4
+{
+    margin-top: 0%;   
+}
+
+.goToButtons input
+{
+    margin-top: 0%;
+    border-radius: 50px;
+    border: 1px solid black;
+    height: 27px;
+    color: black;
+    background-color: yellow;
+}
+/*.shop-logo
+{
+    float: left;
+    margin-right: 23%;
+    height: 20px; 
+    width: 100px;
+    background-repeat: no-repeat;
+    resize: both;
+    background-image: url("http://www.citrus.ua/img/rd/logo.svg");
+}*/
+.shop-logo
+{
+    margin-top: 0%;
+    float: left;
+    margin-right: 23%;
+    height: 20px; 
+    width: 80px;
+}
+#main-photo
+{
+    cursor: pointer;
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 0%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 0%);
+}
+.carousel-control.right {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 0%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 0%);
+}
+.carousel-inner > .item > img
+{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+#modal-name
+{
+margin: 0%;
+    text-align: center;
+}

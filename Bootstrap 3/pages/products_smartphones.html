@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <head>
+ <link rel="shortcut icon" href="../icon/profits.png" type="image/png">
+</head>
+      <title>  Cheaper</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style_products.css" rel="stylesheet">
+   <link href="../css/style_products.css" rel="stylesheet">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    </head>
+  <body>
+ <div class="wrapper">
+     <header class="header">  
+            <div class="container">
+            <div class="row ">  
+                <div  class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <h1><a href="../index.html"  ><img src="../Images/Logo.png" width="192px" height="97"></a></h1>
+                </div>
+                <div  class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                <div class="identification hidden-xs " >
+                    <div  class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <a data-toggle="modal" data-target="#myModalLogin"  id="login">
+                            Вхід  </a>
+                    </div>
+                    <div  class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <a data-toggle="modal" data-target="#myModalRegistration"  id="registration">&nbsp;Реєстрація</a>
+                    </div>
+                </div>   
+                </div>
+                </div>
+                </div>
+            <div class="navbar navbar-inverse"> 
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#find" id="find_logo" >
+                        <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                            <span class="sr-only">Open menu</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        
+                        <!--<a class="navbar-brand" href="#">Name</a>-->
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive-menu">
+                        <ul class="nav navbar-nav" >
+                            <li class="hidden-sm hidden-md hidden-lg"><a data-toggle="modal" data-target="#myModalLogin"  >
+                            Вхід  </a></li>
+                            <li class="hidden-sm hidden-md hidden-lg"> <a data-toggle="modal" data-target="#myModalRegistration"  >Реєстрація</a></li>
+                            <li> <a href=# id="active">Смартфони</a></li>
+                            <li> <a href="products_laptops.html">Ноутбуки</a></li>
+                            <li> <a href="products_tv.html">Телевізори</a></li>
+                        </ul>                     
+                    </div> 
+                    <div class="search collapse navbar-collapse" id="find">                   
+                    <form>
+                               <input type="search" name="q" id="search" placeholder="Пошук"> 
+                               <input type="submit" id="btn_find"value="Найти">
+                        
+                    </form>
+                    </div>
+                </div>
+        </div>
+      </header>
+
+
+      <div class="body">
+        <div class="container">      
+             <div class="row">
+                 <div  class="filter  col-sm-2 col-md-2 col-lg-2 collapse " id="responsive-filter"> 
+                  
+                  <p>Виробник:</p>
+                <label>
+                    <input type="checkbox" name="apple">Apple
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="asus">Asus
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="google">Google
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="htc">HTC
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="huawei">Huawei
+                </label><br/>
+              <label>
+                    <input type="checkbox" name="lenovo">Lenovo
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="lg">LG
+                </label><br/>
+            
+                <label>
+                    <input type="checkbox" name="meizu">Meizu
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="samsung">Samsung
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="sony">Sony
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="xiaomi">Xiaomi
+                </label><br/>
+             
+             <hr/>
+             <p>Ціна:
+            <input type="text" size="2" placeholder="від..." required name="inputText">-<input type="text" size="2" placeholder="до..." required name="inputText"></p>
+             <hr/>
+             <p>Діагональ:</p>
+                <label>
+                    <input type="checkbox" name="d4">до 4"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d45">4,1"-4.5"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d5">4.5"-5"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d55">5"-5.5"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d62">5.6"-6.2"
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="d7">Більше 6.2"
+                </label><br/>
+             <hr/>
+             <p>Операційна система:</p>
+                <label>
+                    <input type="checkbox" name="android">Android
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="ios">IOS
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="windows">Windows Mobile
+                </label><br/>               
+             <hr/>
+             <p>Оперативна пам’ять:</p>
+                <label>
+                    <input type="checkbox" name="om1">1GB
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="om2">2GB
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="om3">3GB
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="om4">4GB
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="om5">Більше 4
+                </label><br/>
+             <hr/>
+             <p>Кількість мегапікселів камери:</p>
+                <label>
+                    <input type="checkbox" name="с5">2-5Мп
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="с8">5-8Мп
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="с13">8-13Мп
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="с14">Більше 13Мп
+                </label><br/>
+             <hr/>
+             <p>Розширення дисплею:</p>
+                <label>
+                    <input type="checkbox" name="4k">4K
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="wqhd">WQHD(2560x1440)
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="fullhd">FullHD(1920x1080)
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="hd">HD(1280x720)
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="qhd">qHD(960x480)
+                </label><br/>
+                     
+            </div>
+
+                 <div  class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+            <div class="items_smartf">
+                <div class="row sort" >                 
+                    <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                        <b>Сортування:</b>
+                         <select name="select" id="sort">
+                            <option name="opt1">Зростанням ціни</option>
+                            <option name="opt2" selected>Спаданням ціни</option>
+                            <option name="opt3" selected>Популярністю</option>
+                        </select>
+                    </div>             
+                </div>
+                <a href="#responsive-filter" data-toggle="collapse" class="btn btn-filter btn-primary hidden-sm hidden-md hidden-lg "  >
+                    <i  class="fa fa-filter" aria-hidden="true"></i>
+                </a>
+                <hr/>
+                <div class="row" name="pixel">                 
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="products/smartphones/Google/pixel/pixel.html"><img src="products/smartphones/Google/Pixel/img/pixel.jpg">     </a>              
+                </div>
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
+                    
+                    <a href="products/smartphones/Google/Pixel/pixel.html"><h3 >Google Pixel</h3></a>
+                      <hr>
+                    <h3  id="tlt">Ціна: </h3><h3 id="price">19999-21999</h3>
+                     <hr>
+                    <p>
+                    Смартфон / Nano-SIM / 1 SIM / екран: 5" / AMOLED / 1920х1080 / вбудована пам'ять: 32 ГБ / оперативна пам'ять: 4 ГБ / процесор: Qualcomm Snapdragon 821 / кількість ядер: 4 / акумулятор: 2770 мАг (незнімний) / камера: 12.3 (f / 2.0) Мп / 
+                    </p>
+                </div>              
+                </div>
+                
+                <p></p>
+                <hr>
+                <p></p>
+                <div class="row" name="iphone7">        
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="products/smartphones/Apple/iPhone7/iphone7.html">
+                    <img src="products/smartphones/Apple/iPhone7/img/iphone7%20logo.jpg">    
+                    </a>
+                </div>
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
+                    <a href="products/smartphones/Apple/iPhone7/iphone7.html"><h3 >Apple Iphone 7</h3></a>
+                      <hr>
+                    <h3 style="float:left" id="tlt">Ціна: </h3><h3 id="price">16221-26442</h3>
+                     <hr>
+                    <p>
+                    Смартфон / Nano-SIM / 1 SIM / екран: 4,7" / IPS • 1334x750 / вбудована пам'ять: 32 ГБ / оперативна пам'ять: 2 ГБ / процесор: Apple A10 Fusion / кількість ядер: 4 /• акумулятор: Li-Ion / камера: 12 (f / 1.8) Мп   
+                    </p>
+                </div>              
+            </div>
+                <hr>
+                <p></p>
+                <div class="row" name="sgs8">        
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="products/smartphones/Samsung/SGS8/sgs8.html">
+                    <img src="products/smartphones/Samsung/SGS8/img/1sams.jpg">    
+                    </a>
+                </div>
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
+                    <a href="products/smartphones/Samsung/SGS8/sgs8.html"><h3 >Samsung Galaxy S8</h3></a>
+                      <hr>
+                    <h3 style="float:left" id="tlt">Ціна: </h3><h3 id="price">20 011 – 24 999</h3>
+                     <hr>
+                    <p>
+                  Nano-SIM /2 (або 1 SIM + карта пам'яті) SIM / екран: 5,8" / Super AMOLED / 2960x1440 / вбудована пам'ять: 64 ГБ / оперативна пам'ять: 4 ГБ / процесор: Samsung Exynos 8895 / кількість ядер: 8 / акумулятор: 3000 мАг (незнімна) / камера: 12 (f / 1.7) Мп
+                    </p>
+                </div>              
+            </div>
+                <hr>
+        </div>
+        <p></p>
+            </div>
+            </div>
+      </div>
+     </div>
+                
+      <footer class="footer-bottom">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="copyright" >
+
+					 © 2017, Cheaper, Всі права захищено
+
+				</div>
+
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="design">
+
+				 |  <a target="_blank" href="http://www.Cheaper.com">Web Design & Development by Andrii Nabyvanets</a>
+
+				</div>
+
+			</div>
+
+		</div>
+    </div>
+	</footer>
+    
+      </div>
+    
+    <div id="myModalLogin" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+    <h3 class="modal-title">Вхід</h3>
+</div>
+    <div class="modal-body">
+   <form action="#" class="form">
+       <div class="form-group">
+       <input type="login" class="form-control" placeholder="Логін" value="">
+       </div>
+        <div class="form-group">
+       <input type="password" class="form-control" placeholder="Пароль" value="">
+       </div>
+       <button type="submit" class="btn btn-primary  btn-right-sdm btn-right-sm btn-right-md btn-right-lg" >
+           <i class="fa fa-sign-in"></i> Увійти
+       </button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+      
+      <div id="myModalRegistration" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+    <h3 class="modal-title">Реєстрація</h3>
+</div>
+    <div class="modal-body">
+   <form action="#" class="form">
+       <div class="form-group">
+       <input type="text" class="form-control" placeholder="Ім'я" value="">
+       </div>
+         <div class="form-group">
+       <input type="text" class="form-control" placeholder="Прізвище" value="">
+       </div>
+       <div class="form-group">
+       <input type="email" class="form-control" placeholder="Email" value="">
+       </div>
+        <div class="form-group">     
+       <input type="login" class="form-control" placeholder="Логін" value="">
+       </div>
+        <div class="form-group">
+       <input type="password" class="form-control" placeholder="Пароль" value="">
+       </div>
+       <button type="submit" class="btn btn-primary  btn-right-sdmR btn-right-smR btn-right-md-r btn-right-lgR" >
+           <i class="fa fa-sign-in"></i> Зареєструватися
+       </button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>

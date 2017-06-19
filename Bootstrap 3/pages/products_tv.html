@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <head>
+ <link rel="shortcut icon" href="../icon/profits.png" type="image/png">
+</head>
+      <title>  Cheaper</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style_products.css" rel="stylesheet">
+   <link href="../css/style_products.css" rel="stylesheet">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    </head>
+  <body>
+ <div class="wrapper">
+     <header class="header">  
+            <div class="container">
+            <div class="row ">  
+                <div  class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <h1><a href="../index.html"  ><img src="../Images/Logo.png" width="192px" height="97"></a></h1>
+                </div>
+                <div  class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                <div class="identification hidden-xs " >
+                    <div  class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <a data-toggle="modal" data-target="#myModalLogin"  id="login">
+                            Вхід  </a>
+                    </div>
+                    <div  class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <a data-toggle="modal" data-target="#myModalRegistration"  id="registration">&nbsp;Реєстрація</a>
+                    </div>
+                </div>   
+                </div>
+                </div>
+                </div>
+            <div class="navbar navbar-inverse"> 
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#find" id="find_logo" >
+                        <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                            <span class="sr-only">Open menu</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        
+                        <!--<a class="navbar-brand" href="#">Name</a>-->
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive-menu">
+                        <ul class="nav navbar-nav" >
+                            <li class="hidden-sm hidden-md hidden-lg"><a data-toggle="modal" data-target="#myModalLogin"  >
+                            Вхід  </a></li>
+                            <li class="hidden-sm hidden-md hidden-lg"> <a data-toggle="modal" data-target="#myModalRegistration"  >Реєстрація</a></li>
+                            <li> <a href="products_smartphones.html" >Смартфони</a></li>
+                            <li> <a href="products_laptops.html">Ноутбуки</a></li>
+                            <li> <a href="#" id="active">Телевізори</a></li>
+                        </ul>                     
+                    </div> 
+                    <div class="search collapse navbar-collapse" id="find">                   
+                    <form>
+                               <input type="search" name="q" id="search" placeholder="Пошук"> 
+                               <input type="submit" id="btn_find"value="Найти">
+                        
+                    </form>
+                    </div>
+                </div>
+        </div>
+      </header>
+
+
+      <div class="body">
+        <div class="container">      
+             <div class="row">
+                 <div  class="filter  col-sm-2 col-md-2 col-lg-2 collapse " id="responsive-filter"> 
+                  
+                  <p>Виробник:</p>
+                <label>
+                    <input type="checkbox" name="ergo">Ergo
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="lg">LG
+                </label><br/>
+            
+                <label>
+                    <input type="checkbox" name="philips">Philips
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="samsung">Samsung
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="sony">Sony
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="sharp">Sharp
+                </label><br/>
+                     <label>
+                    <input type="checkbox" name="xiaomi">Xiaomi
+                </label><br/>
+             
+             <hr/>
+             <p>Ціна:
+            <input type="text" size="2" placeholder="від..." required name="inputText">-<input type="text" size="2" placeholder="до..." required name="inputText"></p>
+             <hr/>
+             <p>Діагональ:</p>
+                <label>
+                    <input type="checkbox" name="d20">до 20"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d25">20,5"-26"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d32">27"-32"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d43">39"-43"
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="d50">46"-50"
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="d60">55"-60"
+                </label><br/>
+                     <label>
+                    <input type="checkbox" name="d80">65"-80"
+                </label><br/>
+                     <label>
+                    <input type="checkbox" name="d100">Більше 80"
+                </label><br/>
+             <hr/>
+             <p>Smart TV:</p>
+                <label>
+                    <input type="checkbox" name="yesmart">Так
+                </label><br/>
+                
+                <label>
+                    <input type="checkbox" name="nosmart">Ні
+                </label><br/>               
+             <hr/>       
+             <p>Розширення дисплею:</p>
+                <label>
+                    <input type="checkbox" name="4k">4K UHD
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="fullhd">FullHD
+                </label><br/>
+             <label>
+                    <input type="checkbox" name="hd">HD ready
+                </label><br/>
+                 <p>Особливості:</p>
+                <label>
+                    <input type="checkbox" name="3d">3D
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="OLED">OLED
+                </label><br/>
+                <label>
+                    <input type="checkbox" name="warp">Вигнутий екран
+                </label><br/>
+             <hr/>     
+            </div>
+
+                 <div  class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+            <div class="items_smartf">
+                <div class="row sort" >                 
+                    <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                        <b>Сортування:</b>
+                         <select name="select" id="sort">
+                            <option name="opt1">Зростанням ціни</option>
+                            <option name="opt2">Спаданням ціни</option>
+                            <option name="opt3" selected>Популярністю</option>
+                        </select>
+                    </div>             
+                </div>
+                <a href="#responsive-filter" data-toggle="collapse" class="btn btn-filter btn-primary hidden-sm hidden-md hidden-lg "  >
+                    <i  class="fa fa-filter" aria-hidden="true"></i>
+                </a>
+                <hr/>
+                <div class="row">                 
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="products/TV/Samsung/ue43/ue43.htmll"><img src="products/TV/Samsung/ue43/img/samsung_ue43.jpg">     </a>              
+                </div>
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
+                    <a href="products/TV/Samsung/ue43/ue43.html"><h3 name="name">Samsung UE43KU6000</h3></a>
+                      <hr>
+                    <h3  id="tlt">Ціна: </h3><h3 id="price" name="price">11 370 – 20 449</h3>
+                     <hr>
+                    <p name="short_characters">
+                    LCD з LED-підсвіткою / діагональ екрану: 43" / роздільна здатність: 3840x2160 / частота, Гц: 1300 PQI / тюнер аналоговий/цифровий: DVB-T2, DVB-S2, DVB-C / Smart TV: Samsung Smart TV / мережевий інтерфейс: + (100 мб / сек)   
+                    </p>
+                </div>              
+                </div>
+                
+                <p></p>
+                <hr>
+                <p></p>
+                <div class="row">        
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="products/tv/LG/32LH/32lh.html">
+                    <img src="products/TV/LG/32LH/img/1lh32.jpg">    
+                    </a>
+                </div>
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
+                    <a href="products/tv/LG/32LH/32lh.html"><h3 name="name">LG 32LH530V</h3></a>
+                      <hr>
+                    <h3 style="float:left" id="tlt">Ціна: </h3><h3 id="price" name="price">8 881 – 12 632</h3>
+                     <hr>
+                    <p name="short_characters">
+                    LCD з LED-підсвіткою • діагональ екрану: 32" • роздільна здатність: 1920x1080 • частота, Гц: PMI 900 • тюнер аналоговий/цифровий: DVB-T2, DVB-S2, DVB-C    
+                    </p>
+                </div>              
+            </div>
+                <hr>
+                 <p></p>
+                <div class="row">        
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="products/tv/Philips/24ph/24ph.html">
+                    <img src="products/TV/Philips/24ph/img/1Philips%2024PH.jpg">    
+                    </a>
+                </div>
+                <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
+                    <a href="products/tv/Philips/24ph/24ph.html"><h3 name="name">Philips 24PHH4000</h3></a>
+                      <hr>
+                    <h3 style="float:left" id="tlt">Ціна: </h3><h3 id="price" name="price">5 881 – 8 632</h3>
+                     <hr>
+                    <p name="short_characters">
+                    Телевізор РК (LED-підсвічування) • діагональ екрану: 24" • роздільна здатність: 1366x768 • частота, Гц: 100 • тюнер аналоговий/цифровий: DVB-T, DVB-C  
+                    </p>
+                </div>              
+            </div>
+                <hr>
+        </div>
+        <p></p>
+            </div>
+            </div>
+      </div>
+     </div>
+                
+      <footer class="footer-bottom">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="copyright" >
+
+					 © 2017, Cheaper, Всі права захищено
+
+				</div>
+
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="design">
+
+				 |  <a target="_blank" href="http://www.Cheaper.com">Web Design & Development by Andrii Nabyvanets</a>
+
+				</div>
+
+			</div>
+
+		</div>
+    </div>
+	</footer>
+    
+      </div>
+    
+    <div id="myModalLogin" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+    <h3 class="modal-title">Вхід</h3>
+</div>
+    <div class="modal-body">
+   <form action="#" class="form">
+       <div class="form-group">
+       <input type="login" class="form-control" placeholder="Логін" value="">
+       </div>
+        <div class="form-group">
+       <input type="password" class="form-control" placeholder="Пароль" value="">
+       </div>
+       <button type="submit" class="btn btn-primary  btn-right-sdm btn-right-sm btn-right-md btn-right-lg" >
+           <i class="fa fa-sign-in"></i> Увійти
+       </button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+      
+      <div id="myModalRegistration" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+    <h3 class="modal-title">Реєстрація</h3>
+</div>
+    <div class="modal-body">
+   <form action="#" class="form">
+       <div class="form-group">
+       <input type="text" class="form-control" placeholder="Ім'я" value="">
+       </div>
+         <div class="form-group">
+       <input type="text" class="form-control" placeholder="Прізвище" value="">
+       </div>
+       <div class="form-group">
+       <input type="email" class="form-control" placeholder="Email" value="">
+       </div>
+        <div class="form-group">     
+       <input type="login" class="form-control" placeholder="Логін" value="">
+       </div>
+        <div class="form-group">
+       <input type="password" class="form-control" placeholder="Пароль" value="">
+       </div>
+       <button type="submit" class="btn btn-primary  btn-right-sdmR btn-right-smR btn-right-md-r btn-right-lgR" >
+           <i class="fa fa-sign-in"></i> Зареєструватися
+       </button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>
